@@ -7,9 +7,10 @@
         Member :
         .member
           HIRATA
-      %a{:href => "#"}
-
-    .edit-btn Edit
+    
+    .edit-btn
+      =link_to "#" do
+        Edit
   .message_field
     .message_field_info_name
       HIRATA
@@ -25,4 +26,4 @@
           %label{class: "input-box__image"}
             = icon('fas', 'image')
             %input{type: "file", class: "input-box__image__file"}
-        %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
+        %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
