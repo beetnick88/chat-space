@@ -1,0 +1,29 @@
+.chat-main
+  .main-header
+    .header-leftbox
+      .current-group
+        test
+      .member-list
+        Member :
+        .member
+          HIRATA
+    
+    .edit-btn
+      =link_to "#" do
+        Edit
+  .message_field
+    .message_field_info_name
+      HIRATA
+      .message_field_info_date
+        2020/06/10(wed)11:54
+    .message_field_info_comment
+      バカやろー
+  %footer
+    .form
+      %form.new_message
+        .input-box
+          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file", class: "input-box__image__file"}
+        %input.submit-btn{name: "commit", type: "submit", value: "Send"}/

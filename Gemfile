@@ -52,6 +52,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 
@@ -59,3 +60,8 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem 'font-awesome-sass'
 gem 'devise'
 >>>>>>> Stashed changes
+=======
+
+gem "haml-rails", ">= 1.0", '<= 2.0.1'
+gem 'font-awesome-sass'
+>>>>>>> e5cfbea298a52ab028fb1b7737698963cc6d2051
