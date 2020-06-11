@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< Updated upstream:app/assets/stylesheets/application.css
+=======
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "modules/messages";
+@import "reset";
+@import "modules/user";
+@import "modules/flash";
+>>>>>>> Stashed changes:app/assets/stylesheets/application.scss
