@@ -5,7 +5,7 @@
         = current_user.name
       %ul.menu
         %li.new-group
-          =link_to "#" do
+          =link_to new_group_path do
             .icon.i.fas.fa-edit
           %li.edit-user
             = link_to edit_user_path(current_user) do
@@ -13,7 +13,11 @@
 
 
 
-  .groups
-    = link_to '#'
-    %p.group-name Techcamp
-    %p.group_message まだメッセージがありません。
+  .GroupList
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group_name
+            = group.name
+          .group_message
+            メッセージはまだありません

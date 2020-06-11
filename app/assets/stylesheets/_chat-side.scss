@@ -34,27 +34,30 @@
       margin-right: 5px;
       }
     }
-
+  .GroupList{
     .groups {
       background-color: #2f3e51;
       height: calc(100vh - 100px);
       display:flex;
       flex-direction: column;
-      .group-name{
+    }
+      .group_name{
         position: relative;
         padding: 20px 20px 0px 20px;
         width: 260px;
         margin: 0 20px;
         font-size: 15px;
-        color:#ffffff;}
-        .group_message  {
-          padding: 5px 20px 40px 20px;
-          margin: 0 20px;
-          font-size: 11px;
-          color: #ffffff;
+        color:#ffffff;
+      }
+      .group_message  {
+        padding: 5px 20px 40px 20px;
+        margin: 0 20px;
+        font-size: 11px;
+        color: #ffffff;
             }
 
-    }
+    
+  }
 
 
 
