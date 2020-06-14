@@ -2,28 +2,27 @@
   .main-header
     .header-leftbox
       .current-group
-        test
+        = @group.name
       .member-list
         Member :
-        .member
-          HIRATA
+        .member-name
+          .ul
+            - @group.users.each do |user|
+              .li= user.name
     
     .edit-btn
-      =link_to "#" do
-        Edit
-  .message_field
-    .message_field_info_name
-      HIRATA
-      .message_field_info_date
-        2020/06/10(wed)11:54
-    .message_field_info_comment
-      バカやろー
-  %footer
-    .form
-      %form.new_message
-        .input-box
-          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-          %label{class: "input-box__image"}
-            = icon('fas', 'image')
-            %input{type: "file", class: "input-box__image__file"}
-        %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
+      = link_to "Edit", edit_group_path(@group.id)
+
+
+  .Message__field
+    = render @messages
+
+  
+  .Footer
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
+      .Form__contents
+        = f.text_field :content, class: 'Form__inputContent', placeholder: 'type a message'
+        = f.label :image, class: 'Form__inputImage' do
+          = icon('far', 'image', class: 'Form__icon')
+          = f.file_field :image, class: 'Hidden'
+      = f.submit 'Send', class: 'Form__submit'

@@ -1,3 +1,45 @@
 * {
   box-sizing:border-box;
 }
+
+
+.Message__field {
+  background-color:#fafafa;
+  box-sizing: border-box;
+  padding: 35px 40px 0;
+  height: calc(100vh - 100px - 90px);
+  overflow: scroll;
+
+  
+
+.message_box{
+  margin-bottom: 46px;
+}
+.message_info {
+  display: flex;
+  &__name{
+    padding: 35px 0 12px 40px;
+    font-size: 16px;
+    color: #333333;
+  }
+  &__date{
+    padding-left: 10px;
+    font-size: 12px;
+    color: #999;
+    }  
+}
+.message{
+  margin-top: 12px;
+
+  &__content{
+    margin-left: 40px;
+    font-size: 14px;
+    color: #434A54;
+
+  } 
+  &__image{
+    height: 200px;
+  }
+}
+
+}

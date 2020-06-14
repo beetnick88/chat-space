@@ -29,16 +29,20 @@
       color: #999999;
       list-style: none;
       position: relative;
-
-      .member-name {
-        position: absolute;
-        font-size: 12px;
-        color: #999999;
-        list-style: none;
-        padding-left: 40px;
-        }
+      padding-right: 40px;
+    }
+    .member-name {
+      font-size: 12px;
+      color: #999999;
+      padding-left: 10px;
       
+      .li{
+        display: inline;
+        padding-right: 5px;
+
       }
+    }
+      
       
   }
   .edit-btn {
@@ -51,72 +55,53 @@
 
 
 
-
-.message_field {
-  background-color: #fafafa;
-  height: calc(100vh - 190px);
-  color: #333333;
-  .message_field_info_name{
-    display: flex;
-    align-items: center;
-    padding: 35px 0 12px 40px;
-    font-size: 16px;
-    color: #333333;
-    .message_field_info_date{
-      padding-left: 5px;
-      font-size: 12px;
-      color: #999999;
-    }  
-  }
-  .message_field_info_comment{
-    margin-left: 40px;
-    font-size: 14px;
-    color: #434A54;
-  
-  } 
-  
+.Footer {
+  background-color: #dddddd;
+  box-sizing: border-box;
+  height: 90px;
+  width: calc(100vw - 300px);
+  padding: 20px 50px 20px 40px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
-
-
-  .form {
-    background-color: #d2d2d2;
-    height: 90px;
-    padding: 20px 40px;
+.Form{
+  display: flex;
+  justify-content: space-between;
+  &__contents{
+    width: 100%;
+    background-color: #fff;
+    position: relative;
     
-    form {
-      display: flex;
-      .input-box {
-        display: flex;
-        width: 100%;
-        position: relative;
-        &__text {
-          height:50px;
-          width: 100%;
-          color: #434a54;
-          border-style: none;
-          padding: 0 40px 0 10px;
-        }
-        &__image {
-          position: absolute;
-          top: 10px;
-          right:10px;
-          cursor: pointer;
-          font-size: 1.3rem;
+  }
+  &__inputContent {
+    border: none;
+    height: 50px;
+    width: 100%;
+    padding: 0 45px 0 15px;
+  }
+  &__inputImage {
+    height: 50px;
+    position: absolute;
+    right: 10px;
+  }
+  .fa-image {
+    line-height: 50px;
+    font-size: 25px;
+  }
 
-          &__file {
-            display: none;
-          }
-        }
-      }       
-      .submit-btn {
-        width: 100px;
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
-        font-size: 15px;
-        color: #fff;}
-
-      }
+  &__submit {
+    background-color: #38AEF0;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    margin-left: 15px;
+    padding: 0 30px;
+  }
+  
+  .Hidden {
+    display: none;
+  }
   }
