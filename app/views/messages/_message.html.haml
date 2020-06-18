@@ -1,10 +1,10 @@
 .message_box
-  .message_info
-    .message_field_info_name
+  .message_field_info
+    .message_field_info__name
       = message.user.name
-    .message_field_info_date
+    .message_field_info__date
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-  .message_field_info_comment
+  .Message
     - if message.content.present?
       %p.Message__content
         = message.content
