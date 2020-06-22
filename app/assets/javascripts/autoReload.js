@@ -12,9 +12,8 @@ $(function(){
             </div>
           </div>
           <div class="Message">
-            - if message.content.present?
-              <p class="Message__content">
-                ${message.content}
+            <p class="Message__content">
+              ${message.content}
             </p>
             <img class="message__image" src="${message.image}">
           </div>
