@@ -73,3 +73,5 @@ group :production do
 end
 
 gem 'fog-aws'
+
+gem 'turbolinks', '~> 5'
