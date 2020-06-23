@@ -4,10 +4,10 @@ $(function(){
       let html =
         `<div class="message_box" data-message-id=${message.id}>
           <div class="message_field_info">
-            <div class="message_field_info_name">
+            <div class="message_field_info__name">
               ${message.user_name}
             </div>
-            <div class="message_field_info_date">
+            <div class="message_field_info__date">
               ${message.created_at}
             </div>
           </div>
