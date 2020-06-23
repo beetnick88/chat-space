@@ -35,6 +35,9 @@
       }
     }
   .GroupList{
+    a{
+      text-decoration: none;
+    }
     .groups {
       background-color: #2f3e51;
       height: calc(100vh - 100px);
@@ -45,19 +48,19 @@
         position: relative;
         padding: 20px 20px 0px 20px;
         width: 260px;
-        margin: 0 20px;
         font-size: 15px;
         color:#ffffff;
+        text-decoration: none;
       }
       .group_message  {
         padding: 5px 20px 40px 20px;
-        margin: 0 20px;
         font-size: 11px;
         color: #ffffff;
+        text-decoration: none;
             }
 
-    
-  }
+ }
+  
 
 
 

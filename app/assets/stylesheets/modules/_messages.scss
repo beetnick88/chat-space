@@ -12,26 +12,28 @@
 
   
 
-.message_box{
-  margin-bottom: 46px;
-}
-.message_field_info {
-  display: flex;
-  &__name{
-    font-size: 16px;
-    font-weight: bold;
-    color: #434a54;
+  .message_box{
+    margin-bottom: 46px;
   }
-  &__date{
-    padding: 2px 0 0 10px;
-    font-size: 12px;
-    color:#999;
-  }  
+  .message_field_info {
+    display: flex;
+    &__name{
+      font-size: 16px;
+      font-weight: bold;
+      color: #434a54;
+    }
+    &__date{
+      padding: 2px 0 0 10px;
+      font-size: 12px;
+      color:#999;
+    }  
 
 
 }
 .Message{
   margin-top: 12px;
+&__a{
+
 
   &__content{
     margin-left: 0px;
@@ -43,5 +45,5 @@
     height: 200px;
   }
 }
-
+}
 }
